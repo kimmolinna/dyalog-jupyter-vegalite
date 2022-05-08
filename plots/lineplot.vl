@@ -1,10 +1,24 @@
 {
-  "data": {"url": "{$data}"},
-  "mark": "line",
-  "width": 800,
-  "height": 400,
+  "mark": {
+    "type": "area"
+  },
+  "data": {
+    "url": "{$data}"
+  },
   "encoding": {
-    "x": {"field": "date", "type": "temporal"},
-    "y": {"field": "price", "type": "quantitative"}
-  }
+    "x": {
+      "field": "date",
+      "type": "temporal"
+    },
+    "y2": {
+      "field": "max",
+      "type": "quantitative"
+    },
+    "y": {
+      "field": "min",
+      "type": "quantitative"
+    }
+  },
+  "width": 800,
+  "height": 400
 }
