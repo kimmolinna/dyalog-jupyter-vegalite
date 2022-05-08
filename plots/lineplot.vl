@@ -1,0 +1,10 @@
+{
+  "data": {"url": "{$data}"},
+  "mark": "line",
+  "width": 800,
+  "height": 400,
+  "encoding": {
+    "x": {"field": "date", "type": "temporal"},
+    "y": {"field": "price", "type": "quantitative"}
+  }
+}

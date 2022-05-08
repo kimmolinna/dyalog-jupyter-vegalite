@@ -1,0 +1,73 @@
+{
+  "layer": [
+    {
+      "mark": {
+        "type": "bar"
+      },
+      "data": {
+        "url": "{$daily_data}"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "cons_daily",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              300
+            ]
+          },
+          "title": "Daily consumption",
+          "axis": {
+            "titleColor": "steelblue"
+          }
+        }
+      },
+      "width": 800,
+      "height": 400
+    },
+    {
+      "mark": {
+        "type": "line",
+        "interpolate": "step-after"
+      },
+      "data": {
+        "url": "{$monthly_data}"
+      },
+      "encoding": {
+        "x": {
+          "field": "month",
+          "type": "temporal"
+        },
+        "y": {
+          "field": "cons_monthly",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              0,
+              5000
+            ]
+          },
+          "title": "Monthly consumption",
+          "axis": {
+            "titleColor": "Red"
+          }
+        },
+        "color": {
+          "value": "red"
+        }
+      },
+      "width": 800,
+      "height": 400
+    }
+  ],
+  "resolve": {
+    "scale": {
+      "y": "independent"
+    }
+  }
+}

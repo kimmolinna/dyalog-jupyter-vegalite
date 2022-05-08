@@ -1,0 +1,4 @@
+vl←ref linePlot data;t;x;y
+vl←('\{\$data\}'⎕R data) 1⊃⎕NGET ref
+
+⍝ KSL 1.01

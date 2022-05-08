@@ -1,0 +1,5 @@
+vl←ref layerPlot in;t;x;y
+(d m)←in
+vl←('\{\$monthly_data\}'⎕R m)('\{\$daily_data\}'⎕R d) 1⊃⎕NGET ref
+
+⍝ KSL 1.0.1
