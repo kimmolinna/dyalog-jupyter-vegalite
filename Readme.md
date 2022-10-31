@@ -1,6 +1,6 @@
 [Jupyter-notebook](./dyalog-jupyter-vegalite.ipynb)
 
-## Install Node.js - version 18
+## Install Node.js - version 19
 https://github.com/nodesource/distributions/blob/master/README.md
 
 sudo npm install -g vega-lite vega-cli canvas
